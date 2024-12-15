@@ -14,7 +14,7 @@ function itemsCounter() {
   progressbar.setAttribute("max", total);
   if (completed === total && total > 0) {
     document.querySelector(".completed").style.opacity = "1";
-  } else if (completed === 0) {
+  } else if (completed < total) {
     document.querySelector(".completed").style.opacity = "0";
   }
 }
