@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000142;
+}
+#container {
+  width: 400px;
+  min-height: 200px;
+}
+.box {
+  border: 2px solid #602696;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+}
+.box-left {
+  width: 75%;
+}
+.box-left progress {
+  width: 100%;
+  height: 10px;
+  background-color: #0c0d70;
+  border-radius: 10px;
+}
+.box-left progress::-webkit-progress-bar {
+  background-color: #0c0d70;
+  border-radius: 10px;
+}
+.box-left progress::-webkit-progress-value {
+  background-color: #03ffd5;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.box-left h1 {
+  margin-bottom: 0;
+  font-size: 38px;
+}
+.box-left p {
+  color: #03ffd5;
+  margin-top: 0;
+  font-size: 14px;
+  padding-left: 10px;
+  opacity: 0;
+}
+
+.box-right {
+  width: 30%;
+  font-size: 40px;
+  clip-path: circle();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #602696;
+}
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#addInput {
+  background: #0c0d70;
+  border: 1.5px solid #602696;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  height: 25px;
+}
+#addBtn {
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  background: #602696;
+  clip-path: circle();
+  margin-left: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+#list-container {
+  color: #fff;
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+.list-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  background: #0c0d70;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.list-item {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.delete-btn {
+  background: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.list-item[data-isCompleted="true"] {
+  text-decoration: line-through;
+  color: #03ffd5;
+}
